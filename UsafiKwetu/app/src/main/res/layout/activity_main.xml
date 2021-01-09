@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0B"
+    tools:context=".MainActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="100px"
+                android:text="Connexion"
+                android:textColor="#E8E6E6"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="250px"
+                android:layout_height="100px"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:autoText="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Votre pseudo"
+                android:inputType="textPersonName"
+                android:textColor="#FBF9F9"
+                android:textColorHighlight="#090909"
+                android:textColorHint="#F4F1F1"
+                android:textColorLink="#FFFFFF"
+                android:textCursorDrawable="@drawable/logo1"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="250px"
+                android:layout_height="100px"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Votre mot de passe"
+                android:inputType="textPassword"
+                android:textColor="#F6F4F4"
+                android:textColorHighlight="#131313"
+                android:textColorHint="#F3EBEB"
+                android:textColorLink="#101010"
+                android:textCursorDrawable="@drawable/logo1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Ouvrir"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="ChangeActivity"
+                    android:text="Se connecter"
+                    android:textColor="#0E0E0E" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    app:srcCompat="@android:drawable/ic_secure" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

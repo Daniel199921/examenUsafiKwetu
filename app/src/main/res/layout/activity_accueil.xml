@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81c784"
+    tools:context=".accueil">
+
+
+    <LinearLayout
+        android:id="@+id/fond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="307dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="UsafiKwetu"
+            android:textColor="#EDE2E2"
+            android:textSize="40sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <Button
+            android:id="@+id/allerVersPosition"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/btnconection"
+            android:onClick="AllerVersPosition"
+            android:text="Envoyer sa position"
+            android:textColor="#050505" />
+
+        <Button
+            android:id="@+id/Contact"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btnconection"
+            android:onClick="AllerVersConctact"
+            android:text="Contacter la mairie"
+            android:textColor="#131313" />
+
+        <Button
+            android:id="@+id/Apropos"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btnconection"
+            android:onClick="Apropos"
+            android:text="A propos"
+            android:textColor="#090909" />
+
+        <Button
+            android:id="@+id/quitter"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal|center_vertical"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/btnconection"
+            android:cursorVisible="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="QuitterActivity"
+            android:text="Quitter"
+            android:textColor="#111112" />
+
+        <Button
+            android:id="@+id/buttonCol"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btnconection"
+            android:text="changer de couleur" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

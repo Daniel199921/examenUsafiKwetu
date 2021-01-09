@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F4A46"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".contact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Nous contacter"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="837dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#F3F3F3"
+                android:textColorHighlight="#EFEBEB"
+                android:textColorHint="#0E0E0E"
+                android:textColorLink="#ECE8E8"
+                android:textCursorDrawable="@drawable/logo1" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#121111" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Phone"
+                android:inputType="textPersonName"
+                android:textColorHint="#151515" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="250px"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Votre message"
+                android:inputType="textPersonName"
+                android:textColorHint="#121212" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/Sorti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="Sorti"
+                android:text="Annuler"
+                android:textColor="#101010" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Envoyer"
+                android:textColor="#0C0C0C" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

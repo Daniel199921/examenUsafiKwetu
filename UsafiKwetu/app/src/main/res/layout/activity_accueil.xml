@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo8"
+    tools:context=".accueil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Bienvénue!"
+                android:textColor="#EDE2E2"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/allerVersPosition"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:onClick="AllerVersPosition"
+                android:text="Envoyer sa position"
+                android:textColor="#050505" />
+
+            <Button
+                android:id="@+id/Contact"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:onClick="AllerVersConctact"
+                android:text="Contacter la mairie"
+                android:textColor="#131313" />
+
+            <Button
+                android:id="@+id/Apropos"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:onClick="Apropos"
+                android:text="A propos"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/quitter"
+                android:layout_width="220px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal|center_vertical"
+                android:cursorVisible="false"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="QuitterActivity"
+                android:text="Quitter"
+                android:textColor="#111112" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
